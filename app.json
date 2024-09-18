@@ -11,6 +11,9 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
     "ios": {
       "supportsTablet": true
     },
@@ -18,10 +21,22 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.cyberpathshala.cyberpathshala",
+      "permissions": ["INTERNET"]
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "scheme": "cyberpathshala",
+    "extra": {
+      "eas": {
+        "projectId": "f06f0217-36c1-4264-b8b0-4578c1dc6f6e"
+      }
+    },
+    "plugins": [
+      "@react-native-firebase/app",
+      "expo-firebase-core"
+    ]
   }
 }
